@@ -1,0 +1,109 @@
+/* common */
+html, body { height: 100%; }
+body {
+    background: #1d1d1d;
+}
+* {
+    box-sizing: border-box;
+}
+
+.text-primary { color: #fff; }
+.text-modifier { color: #ccc; }
+
+/* player */
+.player-container {
+    height: 100%; width: 100%;
+    position: absolute; left: 0; top: 0;
+    display: flex;
+    justify-content: center; align-items: center;
+}
+#player {
+    width: 550px; height: 360px;
+    /* border: 1px solid red; */
+}
+
+#player .player-ui {
+    width: 100%;
+    height: 180px;
+    border-radius: 20px;
+    /* background: #1d1d; */
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+#player .player-ui__bg {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/songs/choubaguai.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    filter: blur(20px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-filter: blur(20px);
+    z-index: -1;
+}
+
+#player .player-ui__disc {
+    width: 140px; height: 140px; 
+    background-image: url(../images/cd.png);
+    background-size: 100% 100%;
+    float: left;
+    position: relative;
+}
+#player .player-ui__disc .player-ui__img--song {
+    width: 100%; height: 100%;
+    display: flex;justify-content: center;align-items: center;
+}
+#player .player-ui__disc .player-ui__img--song img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#player .player-ui__disc .player-ui__img--tou {
+    /*width: 44px;
+    height: 78px;
+    */display: block;
+    position: absolute;
+    right: -15px;
+    top: 0;
+    width: 35px;
+    transform-origin: center top;
+    transform:rotate(-15deg);
+    -webkit-transform:rotate(-15deg);
+    -moz-transform:rotate(-15deg);
+    -ms-transform:rotate(-15deg);
+    -o-transform:rotate(-15deg);
+}
+
+
+#player .player-ui__controls {
+    flex-grow: 1;
+    /* background: skyblue; */
+    padding-left: 40px;
+    width: 350px;
+    float: right;
+}
+
+#player .player-ui__text--song {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bolder;
+}
+#player .player-ui__text--singer {
+    margin: 10px 0 15px;
+}
+
+.player-ui__btns i {
+    font-weight: bolder;
+    cursor: pointer;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>音乐播放器</title>
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./stylesheets/reset.css">
+    <link rel="stylesheet" href="./stylesheets/player.css">
+</head>
+<body>
+    <audio id="audio"></audio>
+    <main class="player-container">
+        <section id="player">
+            <div class="player-ui">
+                <div class="player-ui__bg"></div>
+                <div class="player-ui__disc">
+                    <div class="player-ui__img--song">
+                        <img class="" src="" alt="">
+                    </div>           
+                    <img class="player-ui__img--tou" src="./images/cd_tou.png" alt="">
+                </div>
+                <div class="player-ui__controls">
+                    <h1 class="player-ui__text--song text-primary"></h1>
+                    <p class="player-ui__text--singer text-modifier"></p>
+
+                    <div class="player-ui__controlbox">
+                        <div class="player-ui__top">
+                            <div class="player-ui__btns">
+                                <i class="iconfont icon-prev player-ui__btn--prev text-primary"></i>
+                                <i class="iconfont icon-play player-ui__btn--play text-primary"></i>
+                                <i class="iconfont icon-next player-ui__btn--next text-primary"></i>
+                                <i class="iconfont icon-loop player-ui__btn--loop text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="./javascripts/jquery.min.js"></script>
+    <script src="./javascripts/player.js"></script>
+</body>
+</html>
