@@ -33,16 +33,39 @@
                                 <i class="iconfont icon-next player-ui__btn--next text-primary"></i>
                                 <i class="iconfont icon-loop player-ui__btn--loop text-primary"></i>
                             </div>
+                            <div class="player-ui__volume-wrapper">
+                                <i class="iconfont icon-volume"></i>
+                                <div class="player-ui__volume progress"></div>
+                            </div>
                         </div>
                     </div>
-
+                    <div class="player-ui__progress-wrapper">
+                        <div class="player-ui__progress progress"></div>
+                        <p class="player-ui__time-wrapper">
+                            <span class="player-ui__time--now"></span>
+                            <span class="player-ui__time--duration"></span>
+                        </p>
+                    </div>
                 </div>
+                
             </div>
-
+            <div class="player-list">
+                <ul class="player-list__group">
+                    <!-- <li class="player-list__item active">
+                        <i class="iconfont icon-volume"></i>
+                        哈哈哈哈
+                    </li>
+                    <li class="player-list__item ">
+                        <i class="iconfont icon-volume"></i>
+                        哈哈哈哈
+                    </li> -->
+                </ul>
+            </div>
         </section>
     </main>
 
     <script src="./javascripts/jquery.min.js"></script>
+    <script src="./javascripts/util.js"></script>
     <script src="./javascripts/player.js"></script>
 </body>
 </html>
